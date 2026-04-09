@@ -22,7 +22,7 @@ async function request<T>(
 
 }
 
-export const Http = {
+export const http = {
     get: <T>(url: string) => request<T>(url, 'GET'),
     post: <T>(url: string, body: unknown) => request<T>(url, 'POST'),
     patch: <T>(url: string, body?: unknown) => request<T>(url, 'PATCH'),
