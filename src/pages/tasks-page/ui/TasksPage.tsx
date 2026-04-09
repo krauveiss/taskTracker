@@ -3,8 +3,7 @@ import { CreateTaskPanel } from "../../../widgets/create-task-panel/ui/CreateTas
 export function TasksPage() {
     const loadTasks = () => { }
     return (
-        <div style={{ maxWidth: 720, margin: "0 auto", display: "grid", gap: 16 }}>
-            <h1>Tasks</h1>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', height: '90vh' }}>
             <CreateTaskPanel onCreated={loadTasks} />
         </div>
     );

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useCreateTask } from '../model/useCreateTask';
+import { Button } from '../../../../shared/ui/Button';
 
 
 type Props = {
@@ -28,9 +29,9 @@ const CreateTaskForm = ({ onCreated }: Props) => {
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '10px' }}>
             <input value={title} onChange={(e) => { setTitle(e.target.value) }}></input>
-            <button type='submit' disabled={loading}>Create Task</button>
+            <Button type='submit' disabled={loading}>Create Task</Button>
         </form >
     )
 }
