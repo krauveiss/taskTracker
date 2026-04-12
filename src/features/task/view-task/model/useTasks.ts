@@ -26,7 +26,7 @@ export function useTasks() {
         async (id: string) => {
             try {
                 await taskApi.delete(id);
-                await fetchTasks();
+                setTasks(prev => prev.filter(t => t.id !== id));
             } catch {
                 setError("Не удалось удалить задачу");
             }

@@ -1,6 +1,5 @@
 
 import { Button, Card, CardContent, Stack, TextField, Typography } from '@mui/material'
-import CreateTaskForm from '../../../features/task/create-task/model/useTaskForm'
 import useTaskForm from '../../../features/task/create-task/model/useTaskForm'
 
 export const CreateTaskPanel = ({ onCreated }: { onCreated: () => void }) => {
@@ -26,12 +25,14 @@ export const CreateTaskPanel = ({ onCreated }: { onCreated: () => void }) => {
                             onChange={(e) => setTitle(e.target.value)}
                             label="Task title"
                             fullWidth
+                            size='small'
                         />
 
                         <Button
                             type="submit"
                             disabled={loading}
                             variant="contained"
+                            style={{ borderRadius: '10px' }}
                         >
                             Create Task
                         </Button>

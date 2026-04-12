@@ -23,7 +23,7 @@ export const TaskPanel = ({ task, onDelete }: TaskPanelProps) => {
                     {task.title}
                 </div>
                 <div style={{ opacity: 0.7 }}>
-                    {task.done ? 'Выполнено' : 'Не выполнено'}
+                    {task.done ? 'Completed' : 'Not completed'}
                 </div>
             </div>
 

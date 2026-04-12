@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Skeleton } from "@mui/material";
 import { useTasks } from "../../../features/task/view-task/model/useTasks";
 import { CreateTaskPanel } from "../../../widgets/create-task-panel/ui/CreateTaskPanel";
 import { TaskPanel } from "../../../widgets/task-panel/ui/TaskPanel";
